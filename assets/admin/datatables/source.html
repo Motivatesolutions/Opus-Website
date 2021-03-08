@@ -1,0 +1,196 @@
+
+<html>
+ <head>
+  <title>Export jQuery Datatables Data to Excel, CSV, PDF using PHP Ajax</title>
+  <link rel="stylesheet" href="jquery.dataTables.min.css" />
+  <script src="jquery.dataTables.min.js"></script>
+
+  <style>
+      .dt-buttons{
+          text-align: center;
+    
+      }
+
+
+  
+  </style>
+ </head>
+ <body>
+  <div class="container box">
+   <h3 align="center">Export jQuery Datatables Data to Excel, CSV, PDF using PHP Ajax</h3>
+   <br />
+   <div class="table-responsive">
+    <table id="customer_data" class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+            </tr>
+
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+            </tr>
+
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+            </tr>
+
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+            </tr>
+
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+            </tr>
+
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+            </tr>
+
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+            </tr>
+
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+            </tr>
+
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+            </tr>
+
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+            </tr>
+
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+            </tr>
+
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+            </tr>
+
+    </tbody>
+    </table>
+   </div>
+  </div>
+  <br />
+  <br />
+ </body>
+</html>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="jquery.dataTables.min.js"></script>
+
+<script src="dataTables.buttons.min.js"></script>
+<script src="buttons.flash.min.js"></script>
+<!-- <script src="jszip.min.js"></script> -->
+<script src="pdfmake.min.js"></script>
+<script src="vfs_fonts.js"></script>
+<script src="buttons.html5.min.js"></script>
+<script src="buttons.print.min.js"></script>
+       
+<script type="text/javascript">
+
+// $(document).ready(function() {
+//     $('#customer_data').DataTable( {
+//         dom: 'Bfrtip',
+//         buttons: [
+//             'copy', 'csv', 'excel', 'pdf', 'print'
+//         ],
+//         lengthMenu: [ [10, 25, 50, -1], [10, 25, 50, "All"]]
+//     } );
+// } );
+
+
+ $(document).ready(function(){
+
+  $('#customer_data').DataTable({
+//    "processing" : true,
+//    "serverSide" : true,
+//    "ajax" : {
+//     url:"fetch.php",
+//     type:"POST"
+//    },
+   dom: 'lBfrtip',
+   buttons: [
+   'copy', 'csv', 'excel', 'pdf', 'print'
+   ],
+   "lengthMenu": [ [10, 25, 50, -1], [10, 25, 50, "All"] ]
+  });
+  
+ });
+ 
+</script>
+
+
+
